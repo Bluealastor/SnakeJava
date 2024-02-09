@@ -1,9 +1,11 @@
 import javax.swing.*;
 public class Main {
     public static void main(String[] args) {
+        // settagio diemsnioni dello schermo
         int boardWidht = 600;
         int boardHeight = boardWidht;
 
+        // impostazioni di visualizzazione dello schermo
         JFrame frame = new JFrame("Snake");
         frame.setVisible(true);
         frame.setSize(boardWidht, boardHeight);
@@ -13,6 +15,7 @@ public class Main {
 
         SnakeGame snakeGame = new SnakeGame(boardWidht, boardHeight);
         frame.add(snakeGame);
+        frame.pack();
     }
 
 }
